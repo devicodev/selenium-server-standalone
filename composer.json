@@ -1,19 +1,13 @@
 {
-    "name": "se/selenium-server-standalone",
+    "name": "devico/selenium-server-standalone",
     "description": "Composer distribution of Selenium Server Standalone, the browser automation framework. Adds a executable to your composer bin directory.",
     "type": "library",
     "keywords": [
         "selenium",
         "testing"
     ],
-    "homepage": "https://github.com/sveneisenschmidt/selenium-server-standalone",
+    "homepage": "https://github.com/devicodev/selenium-server-standalone",
     "license": "Apache 2.0", 
-    "authors": [
-        {
-            "name": "Sven Eisenschmidt",
-            "email": "sven.eisenschmidt@gmail.com"
-        }
-    ],
     "bin": [
         "composer/bin/selenium-server-standalone"
     ]
