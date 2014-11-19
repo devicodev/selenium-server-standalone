@@ -1,7 +1,8 @@
 {
-    "name": "devico/selenium-server-standalone",
+    "name": "devicodev/selenium-server-standalone",
     "description": "Composer distribution of Selenium Server Standalone, the browser automation framework. Adds a executable to your composer bin directory.",
     "type": "library",
+    "minimum-stability": "dev",
     "keywords": [
         "selenium",
         "testing"
