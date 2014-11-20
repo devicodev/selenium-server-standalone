@@ -14,11 +14,14 @@ do
 	        -e=*|--env=*)
             	ENV="${i#*=}"
             		case $ENV in
-            			linux)
-							ENV="-Dwebdriver.chrome.driver=$(pwd -P)/chrome-driver/linux_32/chromedriver"
+            			linux_32)
+							ENV="-Dwebdriver.chrome.driver=$(pwd -P)/chromedriver_linux_32"
 						;;
+						linux_32)
+                            ENV="-Dwebdriver.chrome.driver=$(pwd -P)/chromedriver_linux_64"
+                        ;;
 						mac)
-							ENV="-Dwebdriver.chrome.driver=$(pwd -P)/chrome-driver/mac/chromedriver"
+							ENV="-Dwebdriver.chrome.driver=$(pwd -P)/chromedriver_mac"
 							
 						;;
 					esac
@@ -28,8 +31,8 @@ do
         	;;
 	 esac
 done
-
-
-java -jar "$ENV" "${SELF_PATH}.jar" "$PARAM"
-
-
+if [[ "$ENV" != "" ]]; then
+    java -jar "$ENV" "${SELF_PATH}.jar" "$PARAM"
+else
+    java -jar "${SELF_PATH}.jar" "$PARAM"
+fi
