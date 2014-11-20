@@ -10,7 +10,7 @@
     "homepage": "https://github.com/devicodev/selenium-server-standalone",
     "license": "Apache 2.0", 
     "bin": [
-        ["composer/bin/selenium-server-standalone", "composer/bin/chrome-driver/"]
+        ["composer/bin/selenium-server-standalone", "composer/bin/chrome-driver"]
     ]
 }
 
