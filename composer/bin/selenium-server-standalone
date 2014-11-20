@@ -14,7 +14,7 @@ do
 	        -e=*|--env=*)
             	ENV="${i#*=}"
             		case $ENV in
-            			$CHROME_PATH="-Dwebdriver.chrome.driver=$(pwd -P)/vendor/bin"
+            			CHROME_PATH="-Dwebdriver.chrome.driver=$(pwd -P)/vendor/bin"
             			linux_32)
 							ENV="${CHROME_PATH}/chromedriver_linux_32"
 						;;
