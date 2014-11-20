@@ -15,13 +15,13 @@ do
             	ENV="${i#*=}"
             		case $ENV in
             			linux_32)
-							ENV="-Dwebdriver.chrome.driver=$(pwd -P)/chromedriver_linux_32"
+							ENV="-Dwebdriver.chrome.driver=$(pwd -P)/vendor/bin/chromedriver_linux_32"
 						;;
 						linux_32)
-                            ENV="-Dwebdriver.chrome.driver=$(pwd -P)/chromedriver_linux_64"
+                            ENV="-Dwebdriver.chrome.driver=$(pwd -P)/vendor/bin/chromedriver_linux_64"
                         ;;
 						mac)
-							ENV="-Dwebdriver.chrome.driver=$(pwd -P)/chromedriver_mac"
+							ENV="-Dwebdriver.chrome.driver=$(pwd -P)/vendor/bin/chromedriver_mac"
 							
 						;;
 					esac
